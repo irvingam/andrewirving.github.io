@@ -379,6 +379,10 @@ header {
     margin: 0 0.5em;
 }
 
+.social__list--item:hover {
+    color: coral;
+}
+
 .social__list--link {
     padding: .5em;
 }
