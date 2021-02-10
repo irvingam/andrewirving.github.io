@@ -24,11 +24,19 @@ const logModal = document.getElementById('log--modal')
 const logImg = document.getElementById('log--img')
 const logModalImg = document.getElementById('log-modal-img')
 
+// Vowel Counter Application
+const vowelModal = document.getElementById('vowel--modal')
+const vowelImg = document.getElementById('vowel--img')
+const vowelModalImg = document.getElementById('vowel-modal-img')
+
 // Modal Global Selectors
 const calcCloseBtn = document.getElementsByClassName('close')[0]
 const todoCloseBtn = document.getElementsByClassName('close')[1]
 const budgetCloseBtn = document.getElementsByClassName('close')[2]
 const logCloseBtn = document.getElementsByClassName('close')[3]
+const vowelCloseBtn = document.getElementsByClassName('close')[4]
+
+
                         /////// Events  ///////
 
 // Open Nav Hamburger Event
@@ -83,4 +91,14 @@ logImg.onclick = function() {
 
 logCloseBtn.onclick = function() {
     logModal.style.display = 'none'
+}
+
+// Vowel Counter Application Item Modal
+vowelImg.onclick = function() {
+    vowelModal.style.display = 'block'
+    vowelModalImg.src = this.src
+}
+
+vowelCloseBtn.onclick = function() {
+    vowelModal.style.display = 'none'
 }
