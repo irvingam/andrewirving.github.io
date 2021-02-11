@@ -277,6 +277,11 @@ header {
     color: #f0db4f;
 }
 
+.fa-react {
+    color: #00fffc;
+    padding-left: 2rem;
+}
+
 @media (min-width: 600px) {
     .about-me {
         display: grid;
