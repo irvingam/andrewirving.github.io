@@ -14,10 +14,10 @@ const todoModal = document.getElementById('todo--modal')
 const todoImg = document.getElementById('todo--img')
 const todoModalImg = document.getElementById('todo-modal-img')
 
-// Budget App Modal Selectors
-const budgetModal = document.getElementById('budget--modal')
-const budgetImg = document.getElementById('budget--img')
-const budgetModalImg = document.getElementById('budget-modal-img')
+// Password Generator Modal Selectors
+const passgenModal = document.getElementById('passgen--modal')
+const passgenImg = document.getElementById('passgen--img')
+const passgenModalImg = document.getElementById('passgen-modal-img')
 
 // Employee Log App Modal Selectors
 const logModal = document.getElementById('log--modal')
@@ -32,7 +32,7 @@ const vowelModalImg = document.getElementById('vowel-modal-img')
 // Modal Global Selectors
 const calcCloseBtn = document.getElementsByClassName('close')[0]
 const todoCloseBtn = document.getElementsByClassName('close')[1]
-const budgetCloseBtn = document.getElementsByClassName('close')[2]
+const passgenCloseBtn = document.getElementsByClassName('close')[2]
 const logCloseBtn = document.getElementsByClassName('close')[3]
 const vowelCloseBtn = document.getElementsByClassName('close')[4]
 
@@ -74,13 +74,13 @@ todoCloseBtn.onclick = function() {
 }
 
 // Budget Portfolio Item Modal 
-budgetImg.onclick = function() {
-    budgetModal.style.display = 'block'
-    budgetModalImg.src = this.src
+passgenImg.onclick = function() {
+    passgenModal.style.display = 'block'
+    passgenModalImg.src = this.src
 }
 
-budgetCloseBtn.onclick = function() {
-    budgetModal.style.display = 'none'
+passgenCloseBtn.onclick = function() {
+    passgenModal.style.display = 'none'
 }
 
 // Employee Portfolio Item Modal
