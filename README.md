@@ -7,4 +7,4 @@ My Developer Portfolio
 
 - Individual squares in the "My Work" section allow users to view a demo and the code.
 
-- Interest employers can contact me through email or my varies social media platforms located in the "Contact Me" footer.
+- Interested employers can contact me through email or my varies social media platforms located in the "Contact Me" footer.
