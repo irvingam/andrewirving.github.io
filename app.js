@@ -29,12 +29,18 @@ const vowelModal = document.getElementById('vowel--modal')
 const vowelImg = document.getElementById('vowel--img')
 const vowelModalImg = document.getElementById('vowel-modal-img')
 
+// Currency Converter Application
+const converterModal = document.getElementById('converter--modal')
+const converterImg = document.getElementById('converter--img')
+const converterModalImg = document.getElementById('converter-modal-img')
+
 // Modal Global Selectors
 const calcCloseBtn = document.getElementsByClassName('close')[0]
 const todoCloseBtn = document.getElementsByClassName('close')[1]
 const passgenCloseBtn = document.getElementsByClassName('close')[2]
 const logCloseBtn = document.getElementsByClassName('close')[3]
 const vowelCloseBtn = document.getElementsByClassName('close')[4]
+const converterCLoseBtn =document.getElementsByClassName('close')[5]
 
 
                         /////// Events  ///////
@@ -101,4 +107,14 @@ vowelImg.onclick = function() {
 
 vowelCloseBtn.onclick = function() {
     vowelModal.style.display = 'none'
+}
+
+// Currency Converter Application Item Modal
+converterImg.onclick = function() {
+    converterModal.style.display = 'block'
+    converterModalImg.src = this.src
+}
+
+converterCLoseBtn.onclick = function() {
+    converterModal.style.display = 'none'
 }
