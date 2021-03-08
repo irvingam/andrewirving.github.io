@@ -34,13 +34,19 @@ const converterModal = document.getElementById('converter--modal')
 const converterImg = document.getElementById('converter--img')
 const converterModalImg = document.getElementById('converter-modal-img')
 
+// Daily Note Application
+const noteModal = document.getElementById('dailynote--modal')
+const noteImg = document.getElementById('dailynote--img')
+const noteModalImg = document.getElementById('dailynote-modal-img')
+
 // Modal Global Selectors
 const calcCloseBtn = document.getElementsByClassName('close')[0]
 const todoCloseBtn = document.getElementsByClassName('close')[1]
 const passgenCloseBtn = document.getElementsByClassName('close')[2]
 const logCloseBtn = document.getElementsByClassName('close')[3]
 const vowelCloseBtn = document.getElementsByClassName('close')[4]
-const converterCLoseBtn =document.getElementsByClassName('close')[5]
+const converterCLoseBtn = document.getElementsByClassName('close')[5]
+const noteCloseBtn = document.getElementsByClassName('close')[6]
 
 
                         /////// Events  ///////
@@ -117,4 +123,14 @@ converterImg.onclick = function() {
 
 converterCLoseBtn.onclick = function() {
     converterModal.style.display = 'none'
+}
+
+// Daily Note  Application Item Modal
+noteImg.onclick = function() {
+    noteModal.style.display = 'block'
+    noteModalImg.src = this.src
+}
+
+noteCloseBtn.onclick = function() {
+    noteModal.style.display = 'none'
 }
