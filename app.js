@@ -39,6 +39,11 @@ const noteModal = document.getElementById('dailynote--modal')
 const noteImg = document.getElementById('dailynote--img')
 const noteModalImg = document.getElementById('dailynote-modal-img')
 
+// Weather Application
+const weatherModal = document.getElementById('weather--modal')
+const weatherImg = document.getElementById('weather--img')
+const weatherModalImg = document.getElementById('weather-modal-img')
+
 // Modal Global Selectors
 const calcCloseBtn = document.getElementsByClassName('close')[0]
 const todoCloseBtn = document.getElementsByClassName('close')[1]
@@ -47,6 +52,7 @@ const logCloseBtn = document.getElementsByClassName('close')[3]
 const vowelCloseBtn = document.getElementsByClassName('close')[4]
 const converterCLoseBtn = document.getElementsByClassName('close')[5]
 const noteCloseBtn = document.getElementsByClassName('close')[6]
+const weatherCloseBtn = document.getElementsByClassName('close')[7]
 
 
                         /////// Events  ///////
@@ -125,7 +131,7 @@ converterCLoseBtn.onclick = function() {
     converterModal.style.display = 'none'
 }
 
-// Daily Note  Application Item Modal
+// Daily Note Application Item Modal
 noteImg.onclick = function() {
     noteModal.style.display = 'block'
     noteModalImg.src = this.src
@@ -133,4 +139,14 @@ noteImg.onclick = function() {
 
 noteCloseBtn.onclick = function() {
     noteModal.style.display = 'none'
+}
+
+// Weather Application Item Modal
+weatherImg.onclick = function() {
+    weatherModal.style.display = 'block'
+    weatherModalImg.src = this.src
+}
+
+weatherCloseBtn.onclick = function() {
+    weatherModal.style.display = 'none'
 }
